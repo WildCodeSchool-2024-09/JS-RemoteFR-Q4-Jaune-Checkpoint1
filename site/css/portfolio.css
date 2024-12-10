@@ -190,3 +190,15 @@ nav {
 .purple-text {
   color: var(--purple);
 }
+
+#modify {
+  padding: 12px 24px;
+  background-color: #FF69B4; /* Hot pink background color */
+  color: white; /* Text color */
+  font-size: 16px; /* Font size */
+  border: none;
+  border-radius: 30px; /* Rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
