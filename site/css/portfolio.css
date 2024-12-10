@@ -159,3 +159,7 @@ main > section {
 .purple-text {
   color: var(--purple);
 }
+
+button {
+  border: 1 solid red;
+}
