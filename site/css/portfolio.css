@@ -127,5 +127,8 @@ section {
 .desktop {
   display: none;
 }
+.skills {
+  flex-direction: column;
+}
   
 }
