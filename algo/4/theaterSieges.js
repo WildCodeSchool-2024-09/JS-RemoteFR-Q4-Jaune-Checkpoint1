@@ -16,9 +16,26 @@ exemple du résultat final :
   ["26-1", "26-2", "26-3", ..., "26-100"]
 ]
 */
+// const row = 26 ; 
+// const column = 100 ; 
+ let siege = [] ; 
 
 function theaterSieges() {
-  // Your code here !
+for (let j=1; j<27; j++){
+
+
+for (let i=1; i<101; i++){
+
+siege[j].push(j - i);
+
+}}
+
+return siege;
 }
+
+theaterSieges();
+
+console.log(siege)
+
 
 module.exports = theaterSieges;
