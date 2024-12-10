@@ -23,26 +23,9 @@ p {
 	padding: 0 var(--gutter);
 }
 
-.nav {
-	display: flex;
-	justify-content: space-between;
-}
-
 .menu {
 	display: flex;
 	margin-bottom: var(--gutter);
-	justify-content: flex-end;
-	width: 100%;
-}
-
-.firstbanner {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.firstbanner > img {
-	width: 10%;
 }
 
 .desktop {
@@ -126,8 +109,33 @@ p {
 	color: var(--purple);
 }
 
+/* step 3 */
 @media (max-width: 700px) {
 	.desktop > img {
 		display: none;
+	}
+}
+
+/* step 1  */
+@media (min-width: 700px) {
+	.nav {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.menu {
+		justify-content: flex-end;
+		width: 100%;
+
+		/* step 2 */
+	}
+	.firstbanner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.firstbanner > img {
+		width: 10%;
 	}
 }
