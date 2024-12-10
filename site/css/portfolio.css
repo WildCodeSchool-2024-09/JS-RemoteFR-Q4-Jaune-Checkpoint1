@@ -138,4 +138,9 @@ p {
 	.firstbanner > img {
 		width: 10%;
 	}
+
+	.skills {
+		display: flex;
+		flex-direction: row;
+	}
 }
