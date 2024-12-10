@@ -107,6 +107,10 @@ main {
   color: var(--lightWildColor);
 }
 
+#firstname {
+  /* color: white; */
+}
+
 .projects a {
   color: var(--purple);
   opacity: 0.4;
@@ -153,5 +157,18 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .button-pink {
+    background-color: pink;
+    color: white;
+    width: 10rem;
+    margin-bottom: 2rem;
+    border-radius: 10%;
+    height: 3rem;
+    border-color: white;
+    box-shadow: 2px 1px 1px white;
+    
+    
   }
 }
