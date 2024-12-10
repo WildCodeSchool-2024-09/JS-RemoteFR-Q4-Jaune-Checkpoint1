@@ -11,8 +11,15 @@
   --textAlign: center;
 }
 
+main > section {
+  display: flex;
+  flex-direction: column;
+
+}
+
 img {
   max-width: 100%;
+
 }
 
 h1 {
@@ -116,4 +123,15 @@ p {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  main > section {
+    align-items: center;
+
+  }
+
+  .desktop {
+    margin-bottom: 1rem;
+    margin-top: -0.1rem;
+  }
+  
 }
