@@ -28,6 +28,13 @@ p {
   margin-bottom: var(--gutter);
 }
 
+.first-page{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
@@ -115,4 +122,7 @@ nav {
   justify-content: space-between;
 }
 
+.first-page{
+  align-items: center;
+}
 }
