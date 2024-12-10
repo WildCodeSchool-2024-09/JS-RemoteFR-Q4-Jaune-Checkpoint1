@@ -33,7 +33,19 @@ main > section {
   text-align: center;
 }
 
-
+.skills--title {
+  width: 90vw;
+}
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-direction: ; */
+}
+.column {
+  margin-top: 1rem;
+  width: 30vw;
+}
 
 }
 
