@@ -37,6 +37,10 @@ p {
 	margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
+.avatar-img {
+	cursor: pointer;
+}
+
 /* Description */
 .description {
 	color: var(--light);
@@ -61,6 +65,7 @@ p {
 	border-radius: 4px;
 	padding: 0.5rem;
 	background-color: var(--buttonbg);
+	cursor: pointer;
 }
 
 .change-name:hover {
