@@ -27,6 +27,10 @@ const modifiedName = document.getElementById("firstname");
 
 button.addEventListener("click", () => {
   const textUser = prompt("entrez votre prénom");
+  // STEP 3
+  const colorUSer = prompt("entrez une couleur # : ");
   modifiedName.textContent = textUser;
   modifiedName.style.color = "white";
+  // STEP 3
+  sectionButton.style.background = colorUSer;
 });
