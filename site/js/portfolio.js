@@ -5,7 +5,7 @@ avatar.addEventListener("click", function() {
 });
 
 
-// Step 2 - 3 - 4
+// Step 2 - 3 - 4 - 5
 const modifyButton = document.getElementById("modify");
 modifyButton.addEventListener("click", function () {
 
@@ -15,9 +15,10 @@ modifyButton.addEventListener("click", function () {
     const userName = prompt("Enter your name:");
     const naming = document.getElementById("firstname");
 
-    const pinkText = document.getElementsByClassName("pink-text")
+    const pinkText = document.getElementsByClassName("pink-text");
     const end = document.getElementById("end");
-    console.log(pinkText);
+    
+    const links = document.getElementsByTagName("a");
 
     naming.textContent = userName;
     naming.style.color = "white";
@@ -26,5 +27,9 @@ modifyButton.addEventListener("click", function () {
     
     for (let pink of pinkText) {
         pink.style.color = background;
+    }
+
+    for (let link of links) {
+        link.style.color = background;
     }
 })
