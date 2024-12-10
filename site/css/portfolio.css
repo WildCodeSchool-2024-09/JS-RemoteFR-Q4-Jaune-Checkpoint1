@@ -96,6 +96,11 @@ p {
 	color: var(--purple);
 }
 
+/* Opacity for website */
+.disabled {
+	opacity: 50%;
+}
+
 .box {
 	width: 25%;
 	padding: calc(var(--gutter) * 2);
