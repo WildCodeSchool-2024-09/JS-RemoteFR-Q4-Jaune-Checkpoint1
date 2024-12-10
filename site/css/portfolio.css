@@ -67,7 +67,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -107,4 +107,52 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+.banner {
+  display: flex;
+}
+.banner > h2 {
+  font-size: 3rem;
+}
+.banner > p {
+  max-width: 350px;
+}
+.disabled {
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills-container {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+  }
+  .project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .projects {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+  .skills-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
