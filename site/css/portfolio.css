@@ -59,6 +59,8 @@ nav {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+  display: flex;
+  justify-content: center;
 }
 
 /* Step 3 */
@@ -92,6 +94,15 @@ nav {
   padding: 0 10%;
 }
 
+/* Step 4 */
+@media (min-width: 700px) {
+  .skills {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* // */
+
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
@@ -106,6 +117,7 @@ nav {
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
+  min-width: 20rem;
 }
 
 .column:first-of-type {
