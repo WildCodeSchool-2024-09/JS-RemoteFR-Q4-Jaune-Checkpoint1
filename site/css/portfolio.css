@@ -23,6 +23,18 @@ p {
   padding: 0 var(--gutter);
 }
 
+/* Step 1 */
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 700px) {
+  nav {
+    justify-content: space-between;
+  }
+}
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
