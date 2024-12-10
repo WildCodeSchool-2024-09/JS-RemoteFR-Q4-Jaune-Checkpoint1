@@ -103,6 +103,15 @@ nav {
 }
 /* // */
 
+/* Step 5 */
+@media (max-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+/* // */
+
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
