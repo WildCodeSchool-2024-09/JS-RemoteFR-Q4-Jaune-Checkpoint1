@@ -116,7 +116,7 @@ p {
 }
 
 /* bonus text transparent */
-.disabled{
+.disabled {
   opacity: 0.5;
 }
 
@@ -150,4 +150,15 @@ p {
     justify-content: center;
     flex-direction: row-reverse;
   }
+
+  .projects {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+
 }

@@ -12,9 +12,13 @@ const couleur = document.querySelector(".pink-bg");
 // console.log(couleur);
 
 monBouton.addEventListener("click", () => {
+	const changeColor = prompt("choix de la couleur?");
 	const monNom = prompt("Renseigne ton nom");
 	if (monNom) {
 		firstname.innerHTML = monNom;
 		firstname.style.color = "white";
+	}
+	if (changecolor) {
+		couleur.style.backgroundcolor = changeColor;
 	}
 });
