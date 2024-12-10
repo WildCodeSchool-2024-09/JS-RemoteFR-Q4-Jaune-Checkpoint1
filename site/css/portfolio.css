@@ -138,7 +138,7 @@ p {
   }
 
   .skills {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
   }
 
