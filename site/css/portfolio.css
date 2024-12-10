@@ -59,6 +59,8 @@ p {
 }
 
 .skills {
+  display: flex;
+  flex-direction: column;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
@@ -70,6 +72,7 @@ p {
 }
 
 .column {
+  
   border-left: var(--styledBorder);
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
@@ -133,6 +136,17 @@ p {
     margin-bottom: 1rem;
     margin-top: -0.1rem;
   }
+
+  .skills {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .column {
+    
+    width: 30rem;
+  }
+
   
 }
 
