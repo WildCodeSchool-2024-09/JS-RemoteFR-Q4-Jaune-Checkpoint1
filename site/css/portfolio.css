@@ -114,6 +114,11 @@ p {
 	.desktop > img {
 		display: none;
 	}
+
+	.skills {
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }
 
 /* step 1  */
