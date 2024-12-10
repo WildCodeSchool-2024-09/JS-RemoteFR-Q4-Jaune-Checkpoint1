@@ -4,6 +4,9 @@
 	--cardColor: #ffffff;
 	--borderColor: #e6ecf8;
 	--shadowColor: #e9f0f380;
+	--buttonTextColor: white;
+	--buttonbg: #ffc0cb;
+	--buttonbgHover: #f0b3be;
 
 	--styledBorder: var(--borderTemplate) var(--borderColor);
 	--styledShadow: 0 5px 5px 0 var(var(--shadowColor));
@@ -34,6 +37,7 @@ p {
 	margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
+/* Description */
 .description {
 	color: var(--light);
 	display: flex;
@@ -51,6 +55,19 @@ p {
 	background-color: var(--lightWildColor);
 }
 
+.change-name {
+	color: var(--buttonTextColor);
+	border: 1px solid white;
+	border-radius: 4px;
+	padding: 0.5rem;
+	background-color: var(--buttonbg);
+}
+
+.change-name:hover {
+	background-color: var(--buttonbgHover);
+}
+
+/* Skils */
 .skills {
 	margin-top: calc(var(--gutter) * -2);
 	border-radius: var(--radius);
