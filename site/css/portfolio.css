@@ -35,6 +35,16 @@ p {
 	width: 100%;
 }
 
+.firstbanner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.firstbanner > img {
+	width: 10%;
+}
+
 .desktop {
 	margin: 0;
 	margin-top: calc(var(--gutter) * 5);
