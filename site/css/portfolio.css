@@ -121,6 +121,12 @@ nav {
 }
 /* // */
 
+/* Step 7 */
+.disabled {
+  opacity: 0.5;
+}
+/* // */
+
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
