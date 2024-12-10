@@ -36,6 +36,7 @@ p {
 }
 
 .desktop {
+  display: none;
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
@@ -122,7 +123,7 @@ nav {
   justify-content: space-between;
 }
 
-.first-page{
-  align-items: center;
+.desktop{
+  display: block;
 }
 }
