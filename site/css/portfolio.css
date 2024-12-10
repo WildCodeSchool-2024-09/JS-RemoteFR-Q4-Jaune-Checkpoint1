@@ -131,6 +131,21 @@ p {
 		display: flex;
 		justify-content: center;
 	}
+
+	/* Skills list */
+	.skills {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.languages-h3 {
+		font-size: xx-large;
+	}
+
+	.skills--title {
+		display: none;
+	}
 }
 
 /* Responsive max 700px */
