@@ -3,12 +3,26 @@ body {
   color: var(--textColor);
 }
 
-header nav ul {
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Aligne le logo et les liens verticalement */
+  justify-content: space-between; /* Espacement entre le logo et les liens */
+  width: 100%; /* Prend toute la largeur disponible */
+}
+
+/*header nav ul {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   align-items: center;
-}
+  justify-content: space-between;
+}*/
 
 main {
   padding: calc(var(--gutter) * 3);
