@@ -108,3 +108,51 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+.disabled {
+  opacity: 0.3;
+}
+
+@media only screen and (width > 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills .section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    .box_project {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+}
+
+@media only screen and (width < 700px) {
+  .desktop {
+    display: none;
+  }
+
+  .skills .section {
+    display: flex;
+    flex-direction: column-reverse;
+}
+}
