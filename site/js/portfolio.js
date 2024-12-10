@@ -25,11 +25,5 @@ modifyButton.addEventListener("click", () => {
     firstname.textContent=username;
     firstname.style.color = "white";
 })
-{/* <article>
-<section class="description pink-bg">
-  <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
-  <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
-  <button class="modify" type="button">Modify text and color</button>
-</section>
-</article> */}
+
 

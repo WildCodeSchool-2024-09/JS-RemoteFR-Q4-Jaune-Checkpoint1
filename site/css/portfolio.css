@@ -56,6 +56,7 @@ main > section {
   flex-direction: column-reverse;
 }
 
+
 .menu {
   display: flex;
   margin-bottom: var(--gutter);
@@ -124,11 +125,25 @@ main > section {
 .pink-text {
   color: var(--lightWildColor);
 }
-
+/* consigne 7 : c'est pas beau mais c'est comme j'ai pu */
+.disabled {
+  opacity : 0.5 !important;
+}
 .projects a {
   color: var(--purple);
 }
-
+/* consigne 8 : affichage en ligne des projets */
+@media screen and (min-width: 700px) {
+  .projects{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectsList{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .box {
   width: 25%;
   padding: calc(var(--gutter) * 2);
