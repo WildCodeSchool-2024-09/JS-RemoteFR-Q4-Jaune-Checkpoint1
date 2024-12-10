@@ -154,4 +154,18 @@ p {
 	.desktop-img {
 		display: none;
 	}
+
+	/* Skills list */
+	.skills {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.skills--title {
+		display: none;
+	}
+
+	.languages-h3 {
+		font-size: xx-large;
+	}
 }
