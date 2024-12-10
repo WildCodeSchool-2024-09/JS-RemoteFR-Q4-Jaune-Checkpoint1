@@ -151,6 +151,31 @@ p {
 	.skills--title {
 		display: none;
 	}
+
+	/* Recent word */
+	.projects-title {
+		display: flex;
+		justify-content: center;
+	}
+
+	.projects-text {
+		display: flex;
+		justify-content: center;
+	}
+
+	.box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.organisation {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 /* Responsive max 700px */
