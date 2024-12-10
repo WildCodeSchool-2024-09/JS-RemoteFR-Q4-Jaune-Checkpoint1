@@ -6,3 +6,6 @@ document.getElementById("image").addEventListener("click", function() {
         this.src = "avatar-2191931_1280.png";
     }
 });
+function changerCouleur() {     
+    document.body.style.backgroundColor = "#750ff7";
+    }
