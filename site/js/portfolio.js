@@ -14,8 +14,17 @@ modifyButton.addEventListener("click", function () {
 
     const userName = prompt("Enter your name:");
     const naming = document.getElementById("firstname");
-    
+
+    const pinkText = document.getElementsByClassName("pink-text")
+    const end = document.getElementById("end");
+    console.log(pinkText);
+
     naming.textContent = userName;
     naming.style.color = "white";
     description.style.backgroundColor = background;
+    end.style.backgroundColor = background;
+    
+    for (let pink of pinkText) {
+        pink.style.color = background;
+    }
 })
