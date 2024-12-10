@@ -10,10 +10,16 @@
 
   --textAlign: center;
 }
+/* consigne n°1 : alignemengt à droite des éléments textes de la nav */
+nav{
+  display: flex;
+  justify-content: space-between;
+}
 
 img {
   max-width: 100%;
 }
+
 
 h1 {
   font-size: calc(var(--gutter) * 1.5);
@@ -21,6 +27,33 @@ h1 {
 
 p {
   padding: 0 var(--gutter);
+}
+/* consigne n°2 : création d'un titre, p, et img d'avatar au centre */
+main > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .avatar {
+    max-width : 20vw;
+  }
+}
+/* consigne n°3 : mediaqueries : retrait de l'image desktop pour les écrans <700 */
+@media screen and (max-width: 700px) {
+.desktop{
+  display :none;
+}
+}
+
+/* consignes n°4 et 6 : mediaqueries : alignement horizontal des compétences, dans l'ordre demandé */
+@media screen and (min-width: 700px) {
+.skills-list{
+  display: flex;
+  flex-direction: row-reverse;
+}}
+/* consigne n°6 : bloc front-end au dessus du backend en petit écran */
+.skills-list{
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .menu {
