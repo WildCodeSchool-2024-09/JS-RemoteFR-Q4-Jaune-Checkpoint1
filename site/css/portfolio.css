@@ -112,6 +112,15 @@ nav {
 }
 /* // */
 
+/* Step 6 */
+@media (min-width: 700px) {
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+/* // */
+
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
