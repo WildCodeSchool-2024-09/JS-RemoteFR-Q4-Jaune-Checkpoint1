@@ -113,6 +113,17 @@ p {
   opacity: 0.3;
 }
 
+.text-button {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(255, 149, 167);
+  border: 2px solid white;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
 @media only screen and (width > 700px) {
   nav {
     display: flex;
