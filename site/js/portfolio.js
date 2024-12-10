@@ -14,13 +14,16 @@ imgAvatar.addEventListener('click', function () {
 
 
 // We create the variables that we set to the DOM elements 
-const descriptionPink= document.querySelector(".pink-art");
+const descriptionPink= document.querySelector("#pink-description");
 
 
 
 const buttonModifyText = document.createElement("button");
 buttonModifyText.classList.add(".buttonModify");
 buttonModifyText.textContent = "modify text and color";
+// buttonModifyText.style.textAlign ="center";
+buttonModifyText.style.padding ="1rem";
+
 descriptionPink.appendChild(buttonModifyText);
 
 // Ajout d'un gestionnaire d'événement au bouton
@@ -28,23 +31,13 @@ buttonModifyText.addEventListener("click", () => {
     const userName = prompt("Enter your name :");
     
     if (userName) {
+
         const textElement = document.getElementById("firstname");
         textElement.textContent = userName;
         textElement.style.color = "#ffffff" ;
+        descriptionPink.style.backgroundColor = "#750ff7";
       }
     })
-
-// // Sélection du conteneur où ajouter le bouton
-// const container = document.getElementById("description pink-bg");
-
-// // Création du bouton
-// const button = document.createElement("button");
-// button.textContent = "Changer le texte";
-
-
-
-// // Ajout du bouton au DOM
-// container.appendChild(button);
 
 
 
