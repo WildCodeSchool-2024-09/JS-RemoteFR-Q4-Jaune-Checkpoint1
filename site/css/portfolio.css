@@ -28,10 +28,20 @@ p {
   margin-bottom: var(--gutter);
 }
 
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
   margin-bottom: calc(var(--gutter) * -0.3125);
+}
+
+.desktop > img {
+  display: none;
 }
 
 .description {
@@ -60,6 +70,11 @@ p {
 .skills--title {
   margin: calc(var(--gutter) * -2) 0;
   text-align: var(--textAlign);
+}
+
+.block-column {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .column {
@@ -94,6 +109,7 @@ p {
 
 .projects a {
   color: var(--purple);
+  opacity: 0.4;
 }
 
 .box {
@@ -107,4 +123,35 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (min-width: 700px) {
+  nav {
+    justify-content: space-between;
+  }
+  .desktop > img {
+    display: block;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block-column {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .block-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
