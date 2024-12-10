@@ -33,3 +33,14 @@ modifyButton.addEventListener("click", function () {
         link.style.color = background;
     }
 })
+
+// Step 6
+const modifyLiButton = document.getElementById("modifyLi");
+modifyLiButton.addEventListener("click", function () {
+    const userInput = prompt("Enter anything!")
+    const elements = document.getElementById("front").getElementsByTagName("li");
+
+    for (let li of elements) {
+        li.textContent = userInput;
+    }
+})
