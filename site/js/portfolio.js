@@ -11,6 +11,7 @@ const button = document.querySelector(".change-name");
 const changeBg = document.querySelector(".description");
 const footer = document.getElementById("footer");
 const changeTextColor = document.querySelectorAll(".pink-text");
+const changeLinkNavColor = document.querySelectorAll("a");
 
 button.addEventListener("click", () => {
   const changeBgColor = prompt("Enter your color");
@@ -21,7 +22,13 @@ button.addEventListener("click", () => {
   button.style.backgroundColor = changeBgColor;
   footer.style.backgroundColor = changeBgColor;
 
+  /* Changement de couleur des h4 */
   for (const textColor of changeTextColor) {
     textColor.style.color = changeBgColor;
+  }
+
+  /* Changement de couleur des liens de la nav */
+  for (const link of changeLinkNavColor) {
+    link.style.color = changeBgColor;
   }
 });
