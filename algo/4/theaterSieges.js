@@ -18,7 +18,8 @@ exemple du résultat final :
 */
 
 function theaterSieges() {
-  euhhhhhh;
+  const column = [];
+  const row = [];
 }
 
 module.exports = theaterSieges;

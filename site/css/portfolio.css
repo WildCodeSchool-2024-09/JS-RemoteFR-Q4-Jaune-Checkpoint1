@@ -167,7 +167,7 @@ nav {
   }
 
   .skills {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .all-box {
