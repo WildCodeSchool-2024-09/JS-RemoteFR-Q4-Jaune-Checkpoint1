@@ -22,3 +22,28 @@ btnName.addEventListener("click", () => {
     el.style.color = newColor;
   });
 });
+
+const allLink = document.querySelectorAll("a");
+allLink.forEach((link) => {
+  link.style.color = "#750ff7";
+});
+
+const btnModify = document.querySelector(".btn-modify");
+const devToolsListli = document.querySelectorAll("#front-dev-tools li");
+const newTools = ["VSCode", "Github", "Terminal"];
+
+btnModify.addEventListener("click", () => {
+  devToolsListli.forEach((li, i) => {
+    li.textContent = newTools[i];
+  });
+});
+
+const form = document.getElementById("form");
+const newDevTool = document.getElementById("newdevtool");
+const listdevtools = document.querySelector(".listdevtools");
+form.onsubmit = function (e) {
+  e.preventDefault();
+  const newLi = document.createElement("li");
+  newLi.textContent = newDevTool.value;
+  listdevtools.appendChild(newLi);
+};
